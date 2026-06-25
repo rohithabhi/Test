@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panda Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Fira Code', monospace;
+  background:#000;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+#particles{
+  position:fixed;
+  inset:0;
+  background: radial-gradient(circle at top left,#2c0049,#0e002d 60%,#000);
+  z-index:-1;
+}
+
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  gap:50px;
+  padding:40px;
+}
+
+.card{
+  width:320px;
+  height:420px;
+  border-radius:25px;
+  overflow:hidden;
+  border:2px solid #00ffaa;
+  box-shadow:0 0 40px rgba(0,255,170,.35);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:scale(1.03);
+  box-shadow:0 0 60px #00ffaa;
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.text h1{
+  font-size:3rem;
+  margin:0;
+  color:#00f0ff;
+}
+
+.text p{
+  max-width:500px;
+  color:#ccc;
+  line-height:1.6;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 20px;
+  border:1px solid #9333ea;
+  color:#9333ea;
+  text-decoration:none;
+  border-radius:10px;
+}
+
+.btn:hover{
+  background:#9333ea;
+  color:#000;
+}
+
+@media(max-width:800px){
+  .hero{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+<div id="particles"></div>
+
+<section class="hero">
+  <div class="card">
+    <img src="your-photo.jpg" alt="Panda">
+  </div>
+
+  <div class="text">
+    <h1>Hi, I'm Panda</h1>
+    <p>
+      Self-taught Ethical Hacker & Web Developer passionate about cybersecurity,
+      building secure systems, and creating modern web applications.
+    </p>
+
+    <a class="btn" href="#about">View More</a>
+  </div>
+</section>
+
+</body>
+</html>
